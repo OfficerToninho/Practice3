@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    st = prompt('Введите промежуток от А до В. А = ');
+    a = parseFloat(st);
+    st = prompt('B = ');
+    b = parseFloat(st);
+    st = prompt('Введите делитель С');
+    c = parseFloat(st);
+    let count = 0;
+    for (a; a < (b+1); a++){
+        if ((a % c) == 0){
+            count += 1;
+        }
+    }
+    st = 'Количество чисел делимое на ' + c + ' ровняется ' + count;
+    alert(st);
+</script>
+</body>
+</html>
